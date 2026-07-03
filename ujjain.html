@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visit Ujjain</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    nav {
+      background-color: #6a1b9a;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo h2 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      height: 90vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      background-blend-mode: darken;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      background-color: #ff5722;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e64a19;
+    }
+
+    section {
+      padding: 3rem 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #6a1b9a;
+    }
+
+    .places-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 1rem 0 0.5rem;
+      color: #6a1b9a;
+    }
+
+    .card p {
+      padding: 0 1rem 1rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea, select {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      padding: 0.75rem;
+      background-color: #6a1b9a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #4a148c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #6a1b9a;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <h2>Visit Ujjain</h2>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#places">Places</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#itinerary">Plan</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero" style="background-image: url('imgujjain/g.jpg');">
+    <div class="hero-content">
+      <h1>Welcome to Ujjain</h1>
+      <p>Discover the spiritual and cultural heritage of Ujjain.</p>
+      <a href="#places" class="btn">Explore Places</a>
+    </div>
+  </section>
+
+  <!-- Places Section -->
+  <section id="places" class="places-section">
+    <h2>Top 10 Places to Visit</h2>
+    <div class="places-cards">
+      <div class="card"><img src="imgujjain/a.jpg" alt=""><h3>Mahakaleshwar Temple</h3><p>One of the twelve Jyotirlingas of Lord Shiva.</p></div>
+      <div class="card"><img src="imgujjain/p.jpg" alt=""><h3>Ram Ghat</h3><p>Sacred bathing ghat on the Shipra River.</p></div>
+      <div class="card"><img src="imgujjain/c.jpg" alt=""><h3>Kal Bhairav Temple</h3><p>Dedicated to the fierce form of Lord Shiva.</p></div>
+      <div class="card"><img src="imgujjain/e.jpg" alt=""><h3>Sandipani Ashram</h3><p>Where Lord Krishna received his education.</p></div>
+      <div class="card"><img src="imgujjain/f.jpg" alt=""><h3>Harsiddhi Temple</h3><p>One of the 51 Shaktipeethas.</p></div>
+      <div class="card"><img src="imgujjain/g.jpg" alt=""><h3>Chintaman Ganesh Temple</h3><p>Oldest Ganesh temple in Ujjain.</p></div>
+      <div class="card"><img src="imgujjain/j.jpg" alt=""><h3>Vikram Kirti Mandir</h3><p>Museum dedicated to King Vikramaditya.</p></div>
+      <div class="card"><img src="imgujjain/k.jpg" alt=""><h3>Mangalnath Temple</h3><p>Birthplace of Mars according to Hindu mythology.</p></div>
+      <div class="card"><img src="imgujjain/l.jpg" alt=""><h3>Kumbh Mela Ground</h3><p>Host to the grand Kumbh Mela every 12 years.</p></div>
+      <div class="card"><img src="imgujjain/m.jpg" alt=""><h3>ISKCON Ujjain</h3><p>Spiritual center with peaceful ambiance.</p></div>
+    </div>
+  </section>
+
+  <!-- Image Gallery -->
+  <section id="gallery" class="gallery-section">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-grid">
+      <img src="imgujjain/a.jpg" alt="">
+      <img src="imgujjain/b.jpg" alt="">
+      <img src="imgujjain/c.jpg" alt="">
+      <img src="imgujjain/d.jpg" alt="">
+      <img src="imgujjain/e.jpg" alt="">
+      <img src="imgujjain/f.jpg" alt="">
+      <img src="imgujjain/g.jpg" alt="">
+      <img src="imgujjain/i.jpg" alt="">
+      <img src="imgujjain/j.jpg" alt="">
+      <img src="imgujjain/k.jpg" alt="">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Itinerary Planner Section -->
+  <section id="itinerary" class="itinerary-section">
+    <h2>Plan Your Itinerary</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="date" required />
+      <input type="date" required />
+      <input type="number" placeholder="Number of Travelers" min="1" required />
+      <select multiple required>
+        <option value="Mahakaleshwar Temple">Mahakaleshwar Temple</option>
+        <option value="Ram Ghat">Ram Ghat</option>
+        <option value="Kal Bhairav Temple">Kal Bhairav Temple</option>
+        <option value="Sandipani Ashram">Sandipani Ashram</option>
+        <option value="Harsiddhi Temple">Harsiddhi Temple</option>
+        <option value="Chintaman Ganesh Temple">Chintaman Ganesh Temple</option>
+        <option value="Vikram Kirti Mandir">Vikram Kirti Mandir</option>
+        <option value="Mangalnath Temple">Mangalnath Temple</option>
+        <option value="Kumbh Mela Ground">Kumbh Mela Ground</option>
+        <option value="ISKCON Ujjain">ISKCON Ujjain</option>
+      </select>
+      <button type="submit">Create Itinerary</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Visit Ujjain. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
